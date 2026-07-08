@@ -368,7 +368,7 @@ body {
     }
 }
 /* ==========================================================================
-   9. SECCIÓN DE CONTACTO & FORMULARIO
+   9. SECCIÓN DE CONTACTO & FORMULARIO (CORREGIDA)
    ========================================================================== */
 .contact-section {
     background-color: #090d16;
@@ -386,14 +386,19 @@ body {
     font-weight: 600;
 }
 
+/* Contenedor principal corregido con flex-wrap */
 .contact-container {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     align-items: flex-start;
+    width: 100%; /* Asegura que no se pase de la pantalla */
+    flex-wrap: wrap; /* Si no cabe en pantallas medianas, baja el bloque automáticamente */
 }
 
+/* Ajuste del formulario con porcentajes flexibles */
 .contact-form {
-    flex: 1.2;
+    flex: 1 1 500px; /* Crece y se achica, con un mínimo ideal de 500px */
+    max-width: 100%; /* No permite que se desborde */
     background-color: var(--bg-main);
     padding: 35px;
     border-radius: 12px;
@@ -412,9 +417,11 @@ body {
     font-weight: 500;
 }
 
+/* Forzar a que los inputs respeten el ancho de su contenedor */
 .form-group input,
 .form-group textarea {
     width: 100%;
+    max-width: 100%; /* Clave para que no rompa el diseño */
     padding: 12px 16px;
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -443,8 +450,10 @@ body {
     background-color: #7dd3fc;
 }
 
+/* Ajuste del bloque lateral de información */
 .contact-info {
-    flex: 0.8;
+    flex: 1 1 300px; /* Se adapta flexiblemente al lado o abajo */
+    max-width: 100%;
 }
 
 .contact-info h3 {
@@ -483,7 +492,6 @@ body {
     color: var(--accent-cyan);
     background-color: rgba(56, 189, 248, 0.02);
 }
-
 /* ==========================================================================
    10. PIE DE PÁGINA (FOOTER DE CIERRE)
    ========================================================================== */
