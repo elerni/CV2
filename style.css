@@ -368,7 +368,7 @@ body {
     }
 }
 /* ==========================================================================
-   9. SECCIÓN DE CONTACTO & FORMULARIO (CORREGIDA)
+   9. SECCIÓN DE CONTACTO & FORMULARIO (CORREGIDA PARA ADAPTACIÓN MÓVIL)
    ========================================================================== */
 .contact-section {
     background-color: #090d16;
@@ -395,9 +395,9 @@ body {
     flex-wrap: wrap; /* Si no cabe en pantallas medianas, baja el bloque automáticamente */
 }
 
-/* Ajuste del formulario con porcentajes flexibles */
+/* Ajuste del formulario: Se cambió la base de 500px a 300px para pantallas móviles */
 .contact-form {
-    flex: 1 1 500px; /* Crece y se achica, con un mínimo ideal de 500px */
+    flex: 1 1 300px; 
     max-width: 100%; /* No permite que se desborde */
     background-color: var(--bg-main);
     padding: 35px;
@@ -549,5 +549,9 @@ body {
     }
     .logo-item img {
         height: 32px;
+    }
+    /* NUEVO: Reduce el padding interno del formulario en móviles pequeños */
+    .contact-form {
+        padding: 20px;
     }
 }
