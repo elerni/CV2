@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional | Operaciones y Tecnología</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Capacitación <span style="color: #38bdf8;">Digital</span></div>
+        <div class="nav-links">
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Ernesto Andrés Olivares Apablaza</h1>
+            <p class="tagline">Operaciones de Capacitación & Transformación Digital</p>
+            <div class="quote-card">
+                <p>"Diseño y lidero programas formativos que aceleran la productividad empresarial, blindando la gestión operativa con un enfoque avanzado en ciberseguridad."</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#expertise" class="btn">Impulsar Productividad</a>
+                <a href="Ernesto Olivares_CV.pdf" download="Ernesto Olivares_CV.pdf" class="btn btn-outline">Descargar CV (PDF)</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="section">
+        <h2>Sobre Mí</h2>
+        <div class="text-block">
+            <p>Con más de <strong>6 años de trayectoria comprobada</strong>, me especializo en la dirección, diseño y ejecución de programas de capacitación bajo la estricta norma de calidad <strong>NCH2728:2015</strong>. Mi enfoque no solo busca transmitir conocimiento, sino transformar de raíz las capacidades de las organizaciones: he liderado con éxito proyectos de <em>upskilling</em> que han incrementado la productividad de los equipos en un <span class="highlight">25%</span>.</p>
+            <p>Creo firmemente que la educación corporativa moderna debe ser tecnológica, ágil y, sobre todo, segura. Por ello, integro plataformas LMS (Moodle), simuladores avanzados y herramientas digitales de última generación, complementando la gestión operativa con conocimientos sólidos en <strong>ciberseguridad aplicada</strong>. Esto me permite aportar una visión integral and estratégica única para empresas que se encuentran en pleno proceso de transformación digital.</p>
+        </div>
+    </section>
+
+    <section id="expertise" class="section">
+        <h2>Trayectoria & Experiencia</h2>
+
+        <div class="company-logos-container">
+            <p class="logos-title">"Organizaciones con las que he colaborado:":</p>
+            <div class="logos-display">
+                <div class="logo-item">
+                    <img src="imagenes/s.png" alt="Sence">
+                </div>
+		<div class="logo-item">
+                    <img src="imagenes/e1.png" alt="Entel">
+                </div>
+
+                <div class="logo-item">
+                    <img src="imagenes/e2.png" alt="UDLA">
+                </div>
+                <div class="logo-item">
+                    <img src="imagenes/e3.svg" alt="Movistar">
+                </div>
+		<div class="logo-item">
+                    <img src="imagenes/m.png" alt="Manquehue">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="card">
+                <h3>Gestión de Operaciones y Calidad</h3>
+                <ul>
+                    <li>Normativa de calidad NCH2728:2015</li>
+                    <li>Diseño y coordinación de programas formativos</li>
+                    <li>Modelos de Upskilling corporativo a medida</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Tecnología Educativa (EdTech)</h3>
+                <ul>
+                    <li>Administración y arquitectura de LMS (Moodle)</li>
+                    <li>Implementación de simuladores virtuales</li>
+                    <li>Integración de ecosistemas y herramientas digitales</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Transformación Digital</h3>
+                <ul>
+                    <li>Consultoría en Transformación Digital</li>
+                    <li>Optimización y control de métricas de productividad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+        <h2>Contacto</h2>
+        <p class="contact-subtitle">¿Necesitas liderar la ejecución de <strong>planes formativos</strong> bajo estándares de calidad, optimizar la administración de tus <strong>plataformas LMS</strong> o potenciar el talento de tu organización de <strong>forma segura</strong>? ¡Hablemos!</p>
+        
+        <div class="contact-container">
+            <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito! (Simulación)');">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Iniciar Proyecto Formativo</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Contáctame</h3>
+                <p>También puedes encontrarme en mis plataformas profesionales:</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/ernesto-olivares-apablaza" target="_blank" class="social-btn">💼 LinkedIn</a>
+                    <a href="#" class="social-btn">💻 GitHub</a>
+                    <a href="mailto:tu-correo@ejemplo.com" class="social-btn">✉️ Correo Directo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>© 2026 Ernesto Olivares. Desarrollado de forma nativa con HTML5 y CSS3.</p>
+    </footer>
+
+</body>
+</html>
